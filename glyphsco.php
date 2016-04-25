@@ -58,3 +58,22 @@ function glyphsco_options_page() { ?>
 <?php }
 
 /* END CREATE SETTINGS PAGE */
+
+/* ADD LINK TO FRONTEND HEADER */
+add_action('wp_head', 'glyphsco_frontend_insert');
+
+function glyphsco_frontend_insert(){
+	$output='<script type="text/javascript" src="//kit.glyphs.co/'.get_option('glyphsco_kitid').'.js"></script>';
+	echo $output;
+}
+/* END ADD LINK TO FRONTEND HEADER */
+
+
+/* ADD LINK TO BACKEND HEADER */
+add_action('admin_head', 'glyphsco_backend_insert');
+
+function glyphsco_backend_insert(){
+	$output='<script type="text/javascript" src="//kit.glyphs.co/'.get_option('glyphsco_kitid').'.js"></script>';
+	echo $output;
+}
+/* END ADD LINK TO BACKEND HEADER */
