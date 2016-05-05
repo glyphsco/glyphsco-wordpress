@@ -1,0 +1,61 @@
+/* @override http://proofofnatalie.com/wp-content/plugins/glyphsco/plugin-styles.css */
+
+.glyphsco .col {
+	float: left;
+	margin: 1%;
+	padding: 1%;
+	
+}
+
+.glyphsco .col-1 {
+	width: 12.5%;
+}
+
+.glyphsco .col-2 {
+	width: 29.5%;
+}
+
+.glyphsco .col-3 {
+	width: 46%;
+}
+
+.glyphsco .col-4 {
+	width: 62.5%;
+}
+
+.glyphsco .col-5 {
+	width: 79%;
+}
+
+.glyphsco .col-6 {
+	width: 96%;
+}
+
+
+.glyphsco .clear {
+	clear: both;
+}
+
+.glyphsco h2 {
+	text-align: center;
+}
+
+.glyphsco pre {
+	white-space: pre-wrap;       /* css-3 */
+ 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ 	white-space: -pre-wrap;      /* Opera 4-6 */
+ 	white-space: -o-pre-wrap;    /* Opera 7 */
+ 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.glyphsco .main-content {
+	background-color: white;
+}
+
+/* CSS media query within a stylesheet */
+@media (max-width: 900px) {
+  .glyphsco .col-1, .glyphsco .col-2, .glyphsco .col-3, .glyphsco .col-4, .glyphsco .col-5, .glyphsco .col-6 {
+	width: 100%;
+	float: none;
+	}
+}
